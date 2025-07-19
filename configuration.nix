@@ -130,7 +130,6 @@ services.spice-vdagentd.enable = true;
   kdePackages.kdenlive
   cryptomator
   veracrypt
-  flatseal
   renoise
 
   ];
