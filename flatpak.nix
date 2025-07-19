@@ -1,4 +1,4 @@
-# home.nix
+# flatpak.nix
 { lib, ... }: {
 
   # Add a new remote. Keep the default one (flathub)
