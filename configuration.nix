@@ -127,7 +127,7 @@ services.spice-vdagentd.enable = true;
   krita
   gimp
   grayjay
-  kdenlive
+  kdePackages.kdenlive
   cryptomator
   veracrypt
   flatseal
