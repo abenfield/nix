@@ -16,7 +16,7 @@
         modules = [
           ./hardware-configuration.nix
           ./configuration.nix
-
+	        ./home.nix
           # Home Manager configuration
           home-manager.nixosModules.home-manager
           {
