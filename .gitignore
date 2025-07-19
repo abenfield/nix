@@ -1,0 +1,29 @@
+# Hardware configuration - machine-specific, shouldn't be tracked
+hardware-configuration.nix
+flak.lock
+# Build results
+result
+result-*
+
+# Home Manager
+.hm-backup
+
+# Temporary files
+.tmp/
+*.tmp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 

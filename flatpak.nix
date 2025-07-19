@@ -13,6 +13,7 @@
   # Add here the flatpaks you want to install
   services.flatpak.packages = [
     { appId = "com.brave.Browser"; origin = "flathub"; }
+    { appId = "rg.jdownloader.JDownloader"; origin = "flathub"; }
   ];
 
 }

@@ -11,23 +11,21 @@
       system = "x86_64-linux";
     in
     {
-
-
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
+          # Import hardware configuration at flake level
+          ./hardware-configuration.nix
+          ./configuration.nix
+          
+          # Home Manager configuration
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs.flake-inputs = inputs;
-            home-manager.users."nitsua".imports = [
-              nix-flatpak.homeManagerModules.nix-flatpak
-             ./flatpak.nix
-            ];
-            home-manager.users.nitsua.home.stateVersion = "25.05";
+            home-manager.users.nitsua = import ./home.nix;
           }
-          ./configuration.nix
         ];
       };
     };

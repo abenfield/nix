@@ -5,10 +5,9 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Hardware configuration is now imported at the flake level
+  ];
     
     
       nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -113,6 +112,27 @@ services.spice-vdagentd.enable = true;
   mullvad-vpn
   vesktop  
   git
+  hydralauncher
+  stremio
+  obsidian
+  thunderbird
+  blender
+  dolphin-emu
+  bottles
+  lutris
+  protonup-qt
+  lutris
+  code-cursor
+  jetbrains.rider
+  krita
+  gimp
+  grayjay
+  kdenlive
+  cryptomator
+  veracrypt
+  flatseal
+  renoise
+
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
