@@ -126,7 +126,7 @@ services.spice-vdagentd.enable = true;
   jetbrains.rider
   krita
   gimp
-  grayjay
+  # grayjay
   kdePackages.kdenlive
   cryptomator
   veracrypt
